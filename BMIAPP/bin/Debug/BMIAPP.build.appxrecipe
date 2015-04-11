@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>RAY-THINKPAD</Machine>
+    <WindowsUser>Ray</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>b54030dc-fd9c-4c16-b4cf-4a459a93284d</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\bin\Debug\BMIAPP.exe">
+      <PackagePath>BMIAPP.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Images\bar-2.png">
+      <PackagePath>Images\bar-2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Images\bar.png">
+      <PackagePath>Images\bar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Images\bg_1.jpg">
+      <PackagePath>Images\bg_1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Images\bg_2.jpg">
+      <PackagePath>Images\bg_2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\Images\bg_3.jpg">
+      <PackagePath>Images\bg_3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\bin\Debug\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\bin\Debug\ItemsPage.xbf">
+      <PackagePath>ItemsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\bin\Debug\BMIAPP.xr.xml">
+      <PackagePath>BMIAPP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ray\Desktop\6apps-project\APP\BMIAPP\BMIAPP\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

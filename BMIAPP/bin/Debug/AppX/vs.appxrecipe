@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN8-ASUSOLDNB</Machine>
+    <WindowsUser>Sun</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>C65211136878383FFED869DCE451179D6D9AD23DF17CB67F51FA777069BD6B2D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>b54030dc-fd9c-4c16-b4cf-4a459a93284d_1.0.0.0_neutral__prve88w48yvq6</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>b54030dc-fd9c-4c16-b4cf-4a459a93284d_prve88w48yvq6!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>b54030dc-fd9c-4c16-b4cf-4a459a93284d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Ray</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Carol\BMIAPP\BMIAPP\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T02:17:25.229</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\bin\Debug\BMIAPP.exe">
+      <PackagePath>BMIAPP.exe</PackagePath>
+      <Modified>2013-03-28T02:16:53.972</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\bin\Debug\BMIAPP.pdb">
+      <PackagePath>BMIAPP.pdb</PackagePath>
+      <Modified>2013-03-28T02:16:53.947</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2013-03-19T17:04:42.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T02:16:18.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2013-03-19T17:04:42.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2013-03-19T17:04:42.468</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T02:16:18.189</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T02:16:18.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T02:16:18.194</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Images\bar-2.png">
+      <PackagePath>Images\bar-2.png</PackagePath>
+      <Modified>2013-03-19T17:04:45.609</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Images\bar.png">
+      <PackagePath>Images\bar.png</PackagePath>
+      <Modified>2013-03-21T13:57:26.656</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Images\bg_1.jpg">
+      <PackagePath>Images\bg_1.jpg</PackagePath>
+      <Modified>2013-03-21T13:56:29.631</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Images\bg_2.jpg">
+      <PackagePath>Images\bg_2.jpg</PackagePath>
+      <Modified>2013-03-21T13:56:29.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\Images\bg_3.jpg">
+      <PackagePath>Images\bg_3.jpg</PackagePath>
+      <Modified>2013-03-21T13:56:29.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-03-19T17:04:41.934</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2013-03-19T17:04:44.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\bin\Debug\ItemsPage.xaml">
+      <PackagePath>ItemsPage.xaml</PackagePath>
+      <Modified>2013-03-21T14:11:26.627</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Carol\BMIAPP\BMIAPP\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-03-28T02:17:25.099</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

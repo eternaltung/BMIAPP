@@ -1,0 +1,125 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="BMIAPP.ItemsPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BMIAPP"
+    xmlns:data="using:BMIAPP.Data"
+    xmlns:common="using:BMIAPP.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+    </Page.Resources>
+
+    <Grid Style="{StaticResource LayoutRootStyle}">
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="192*"/>
+    		<ColumnDefinition Width="258*"/>
+    		<ColumnDefinition Width="93*"/>
+    		<ColumnDefinition Width="186*"/>
+    		<ColumnDefinition Width="113*"/>
+    		<ColumnDefinition Width="166*"/>
+    		<ColumnDefinition Width="113*"/>
+    		<ColumnDefinition Width="149*"/>
+    		<ColumnDefinition Width="96*"/>
+    	</Grid.ColumnDefinitions>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="77*"/>
+    		<RowDefinition Height="66*"/>
+    		<RowDefinition Height="187*"/>
+    		<RowDefinition Height="82*"/>
+    		<RowDefinition Height="95*"/>
+    		<RowDefinition Height="261*"/>
+    	</Grid.RowDefinitions>
+    	<Grid.Background>
+    		<ImageBrush ImageSource="Images/bg_3.jpg"/>
+    	</Grid.Background>
+        
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    
+                </VisualState>
+
+                <!--
+                    The back button and title have different styles when snapped, and the list representation is substituted
+                    for the grid displayed in all other view states
+                -->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                    	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="HeightTextBox">
+                    		<DiscreteObjectKeyFrame KeyTime="0">
+                    			<DiscreteObjectKeyFrame.Value>
+                    				<Visibility>Collapsed</Visibility>
+                    			</DiscreteObjectKeyFrame.Value>
+                    		</DiscreteObjectKeyFrame>
+                    	</ObjectAnimationUsingKeyFrames>
+                    	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="WeightTextBox">
+                    		<DiscreteObjectKeyFrame KeyTime="0">
+                    			<DiscreteObjectKeyFrame.Value>
+                    				<Visibility>Collapsed</Visibility>
+                    			</DiscreteObjectKeyFrame.Value>
+                    		</DiscreteObjectKeyFrame>
+                    	</ObjectAnimationUsingKeyFrames>
+                    	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="AgeTextBox">
+                    		<DiscreteObjectKeyFrame KeyTime="0">
+                    			<DiscreteObjectKeyFrame.Value>
+                    				<Visibility>Collapsed</Visibility>
+                    			</DiscreteObjectKeyFrame.Value>
+                    		</DiscreteObjectKeyFrame>
+                    	</ObjectAnimationUsingKeyFrames>
+                    	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BMIText">
+                    		<DiscreteObjectKeyFrame KeyTime="0">
+                    			<DiscreteObjectKeyFrame.Value>
+                    				<Visibility>Collapsed</Visibility>
+                    			</DiscreteObjectKeyFrame.Value>
+                    		</DiscreteObjectKeyFrame>
+                    	</ObjectAnimationUsingKeyFrames>
+                    	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="GenderSwitch">
+                    		<DiscreteObjectKeyFrame KeyTime="0">
+                    			<DiscreteObjectKeyFrame.Value>
+                    				<Visibility>Collapsed</Visibility>
+                    			</DiscreteObjectKeyFrame.Value>
+                    		</DiscreteObjectKeyFrame>
+                    	</ObjectAnimationUsingKeyFrames>
+                    	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="IdealBMIText">
+                    		<DiscreteObjectKeyFrame KeyTime="0">
+                    			<DiscreteObjectKeyFrame.Value>
+                    				<Visibility>Collapsed</Visibility>
+                    			</DiscreteObjectKeyFrame.Value>
+                    		</DiscreteObjectKeyFrame>
+                    	</ObjectAnimationUsingKeyFrames>
+                    	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BarCanvas">
+                    		<DiscreteObjectKeyFrame KeyTime="0">
+                    			<DiscreteObjectKeyFrame.Value>
+                    				<Visibility>Collapsed</Visibility>
+                    			</DiscreteObjectKeyFrame.Value>
+                    		</DiscreteObjectKeyFrame>
+                    	</ObjectAnimationUsingKeyFrames>
+                        
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <TextBox x:Name="HeightTextBox" Grid.Column="5" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" InputScope="Number" Grid.Row="1" MaxLength="5" Width="100" Height="50" FontSize="28"/>
+        <TextBox x:Name="WeightTextBox" Grid.Column="7" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" InputScope="Number" Grid.Row="1" MaxLength="5" Width="100" Height="50" FontSize="28"/>
+        <TextBox x:Name="AgeTextBox" Grid.Column="3" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" InputScope="Number" Background="White" Grid.Row="1" MaxLength="3" Width="100" Height="50" FontSize="28"/>
+    	<TextBlock x:Name="BMIText" Grid.Column="4" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Grid.Row="3" Grid.ColumnSpan="4" Foreground="Black"/>
+    	<ToggleSwitch x:Name="GenderSwitch" Grid.Column="1" HorizontalAlignment="Center" Height="66" VerticalAlignment="Center" Width="205" OffContent="男生" OnContent="女生" FontSize="26.667" Grid.Row="1"/>
+    	<TextBlock x:Name="IdealBMIText" Grid.Column="4" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Grid.Row="4" Foreground="Black" Grid.ColumnSpan="4"/>
+    	<Canvas x:Name="BarCanvas" Grid.ColumnSpan="6" Height="180" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Grid.Row="2" Grid.Column="2">
+    		<Image Source="Images/bar.png" Stretch="Fill" HorizontalAlignment="Left" Height="180" Width="800" VerticalAlignment="Top"/>
+    		<Image x:Name="BarImage" Height="60" Source="Images/bar-2.png" Stretch="Fill" Width="60"/>
+    	</Canvas>
+    </Grid>
+</common:LayoutAwarePage>
